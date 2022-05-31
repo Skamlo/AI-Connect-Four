@@ -1,0 +1,5 @@
+Database in this folder have contains:
+	-game table with 50 games in 933 records
+	-winner table that contains information about who won
+
+Currently this database is not using in program
