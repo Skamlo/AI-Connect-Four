@@ -23,8 +23,8 @@ This is a python gui aplication illustrating the application of machine learning
 * PLayer VS AI - in this game type, player paly with AI
 
 ## Setup
-If you want to run this app you have to install three packages - `scikit-learn`, `tkinter` and `customtkinter` because `customtkinter` is not campatible with `pyinstaller`, so I can't create an .exe file.
-You can do it with pip method by typing `pip install scikit-learn tkinter customtkinter` cammand in system console.
+If you want to run this app you have to install two packages - `scikit-learn` and `customtkinter` because `customtkinter` is not campatible with `pyinstaller`, so I can't create an .exe file.
+You can do it with pip method by typing `pip install scikit-learn customtkinter` cammand in system console.
 After that you have to run `main.py` file using e.g. `python C:\Users\User\Path\To\Program\Folder\AI-Connect-four\main.py` command in system console.
 
 ## Future New Features
