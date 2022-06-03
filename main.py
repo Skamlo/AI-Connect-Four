@@ -417,10 +417,13 @@ def addPawn(event, numberOfColumn):
             # AI PLAY (ONLY WHEN GAMETYPE == 2)
             if currentData.currentGameType == 2 and currentData.currentPlayer == True:
                 if checksFunctions.checkChangeToWin(True) != 0:
+                    print("checkChangeToWin True")
                     addPawn(0, checksFunctions.checkChangeToWin(True))
                 elif checksFunctions.checkChangeToWin(False) != 0:
+                    print("checkChangeToWin False")
                     addPawn(0, checksFunctions.checkChangeToWin(False))
                 elif checksFunctions.checkBlock(False) != 0:
+                    print("checkBlock")
                     addPawn(0, checksFunctions.checkBlock(False))
                 else:
                     global MLPmodels
@@ -434,7 +437,7 @@ def addPawn(event, numberOfColumn):
 
                     predict = MLPmodel.predict([predictInput])
 
-                    addPawn(0, predict[0])
+                    addPawn(0, checksFunctions.checkPotentialLoss(predict[0], False))
 
         else:
             if currentData.currentPlayer == True:
