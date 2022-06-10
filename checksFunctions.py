@@ -390,16 +390,12 @@ def checkPotentialLoss(prediction, player):
                     if (contains == 0):
                         notLoss.append(i)
                 
-                print("notLoss[random.randint(0, len(notLoss) - 1)] (in \"if lossIsHere contains prediction value\")")
                 return notLoss[random.randint(0, len(notLoss) - 1)]
             else:
-                print("prediction (in \"if lossIsHere contains prediction value\")")
                 return prediction
 
         else:
-            print("random.randint(0, 7) (in \"if lossIsHere is full\")")
             return random.randint(0, 7)
     else:
-        print("prediction (in \"if lossIsHere is empty\")")
         return prediction
     
