@@ -371,8 +371,6 @@ def checkPotentialLoss(prediction, player):
                 currentData.currentGame[x+1][y+2+1] == 0):
                 lossIsHere.append(x + 1 + 1)
 
-    print(prediction, lossIsHere, " ", end='')
-
     if lossIsHere != []: # if lossIsHere is empty
         if len(set(lossIsHere)) < 7: # if lossIsHere is full
             loss = 0
